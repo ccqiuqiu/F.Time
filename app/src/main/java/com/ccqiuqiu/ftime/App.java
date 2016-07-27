@@ -61,6 +61,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         x.Ext.init(this);
         Dexter.initialize(this);
         mContext = this.getBaseContext();
