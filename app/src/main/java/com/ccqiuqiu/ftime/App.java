@@ -76,7 +76,7 @@ public class App extends Application {
         mZanting = ViewUtils.getIntBySharedPreferences("sett_zanting", 10);
         //默认的闹铃铃声
         String lingsheng_d = ViewUtils.getStringBySharedPreferences("default_lingsheng");
-        Uri uri = null;
+        Uri uri;
         if (lingsheng_d == null) {
             uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
             ViewUtils.putStringToSharedPreferences("default_lingsheng", uri.toString());
