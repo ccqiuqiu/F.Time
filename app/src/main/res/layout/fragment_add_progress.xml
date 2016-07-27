@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <org.apmem.tools.layouts.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp">
+
+            <FrameLayout
+                android:id="@+id/type_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tv_type_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_t"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/type_time"
+                    android:textColor="@color/colorPrimary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/type_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tv_type_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_t"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/type_date"
+                    android:textColor="@color/colorPrimary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/type_fenqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/tv_type_fenqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_t"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/type_fenqi"
+                    android:textColor="@color/colorPrimary" />
+            </FrameLayout>
+        </org.apmem.tools.layouts.FlowLayout>
+
+        <FrameLayout
+            android:id="@+id/view_type_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#10FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/time_qj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/time_qujian" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view_type_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#10FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/date_qj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/date_qujian" />
+        </FrameLayout>
+
+        <com.ccqiuqiu.ftime.View.WheelViewImg
+            android:id="@+id/imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:lwvHighlightColor="@color/colorAccent"
+            app:lwvMarkColor="#30FFFFFF"
+            app:lwvMarkTextColor="#60FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/view_tixing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_tixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tixing"
+                android:textColor="#30FFFFFF" />
+
+            <com.ccqiuqiu.ftime.View.WheelView
+                android:id="@+id/tixing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tixing"
+                app:itemNumber="3"
+                app:lineColor="#10FFFFFF"
+                app:lineHeight="1dp"
+                app:maskHight="35dp"
+                app:noEmpty="true"
+                app:normalTextColor="#30FFFFFF"
+                app:normalTextSize="12sp"
+                app:selectedTextColor="#FFFFFFFF"
+                app:selectedTextSize="16sp"
+                app:unitHight="35dp" />
+
+        </RelativeLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/progress_name"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:met_baseColor="#FFFFFFFF"
+            app:met_clearButton="true"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="true"
+            app:met_primaryColor="#FFFFFFFF" />
+    </LinearLayout>
+</ScrollView>

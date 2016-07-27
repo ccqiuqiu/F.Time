@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10FFFFFF">
+
+    <com.ccqiuqiu.ftime.View.WheelViewV
+        android:id="@+id/select_dayofmonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:lwvAdditionalCenterMark="@string/day"
+        app:lwvHighlightColor="@color/colorAccent"
+        app:lwvMarkColor="#30FFFFFF"
+        app:lwvMarkTextColor="#60FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/select_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/week_1_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_1"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_2_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_2"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_3_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_3"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_4_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_4"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_5_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_5"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_6_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_6"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/week_7_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/week_7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/week_7"
+                android:textColor="@color/white_t" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_zdy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/zdy_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/zdy_work"
+            android:textSize="14sp"
+            android:numeric="integer"
+            android:maxLength="5"
+            app:met_baseColor="#FFFFFFFF"
+            android:gravity="center_horizontal"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="false"
+            app:met_primaryColor="#FFFFFFFF" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/zdy_un_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/zdy_unwork"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:maxLength="5"
+            android:numeric="integer"
+            app:met_baseColor="#FFFFFFFF"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="false"
+            app:met_primaryColor="#FFFFFFFF" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/zdy_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/zdy_curdays"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:maxLength="5"
+            android:numeric="integer"
+            app:met_baseColor="#FFFFFFFF"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="false"
+            app:met_primaryColor="#FFFFFFFF" />
+    </LinearLayout>
+</FrameLayout>

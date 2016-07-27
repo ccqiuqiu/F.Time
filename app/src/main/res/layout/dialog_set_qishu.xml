@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/qishu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numeric="integer"
+        android:hint="@string/set_qishu"
+        android:maxLength="16"
+        android:textSize="14sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_clearButton="true"
+        app:met_floatingLabel="normal"
+        app:met_hideUnderline="false"
+        app:met_primaryColor="@color/colorPrimary" />
+</LinearLayout>

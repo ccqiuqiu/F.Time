@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/drag_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@mipmap/banner"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+        <!--android:src="@mipmap/ic_launcher" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#ff888888"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/lingshengshichang"
+                android:textColor="@color/blank_t" />
+
+            <com.ccqiuqiu.ftime.View.MyRangeBar
+                android:id="@+id/shichang"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                custom:connectingLineColor="@color/colorAccent"
+                custom:pinColor="@color/colorAccent"
+                custom:pinMaxFont="12sp"
+                custom:pinRadius="14dp"
+                custom:rangeBar="false"
+                custom:selectorColor="@color/colorAccent"
+                custom:temporaryPins="false"
+                custom:textColor="@color/white"
+                custom:tickEnd="30"
+                custom:tickInterval="5"
+                custom:tickStart="5" />
+
+            <TextView
+                android:id="@+id/tv_pppp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zanting"
+                android:textColor="@color/blank_t" />
+
+            <com.ccqiuqiu.ftime.View.MyRangeBar
+                android:id="@+id/zanting"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                custom:connectingLineColor="@color/colorAccent"
+                custom:pinColor="@color/colorAccent"
+                custom:pinMaxFont="12sp"
+                custom:pinRadius="14dp"
+                custom:rangeBar="false"
+                custom:selectorColor="@color/colorAccent"
+                custom:temporaryPins="false"
+                custom:textColor="@color/white"
+                custom:tickEnd="30"
+                custom:tickInterval="5"
+                custom:tickStart="5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/degault_lingsheng"
+                android:textColor="@color/blank_t" />
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/lingsheng"
+                style="@style/LightFlatWaveButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="dgg.mp3"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="6dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/about"
+                android:textColor="@color/blank_t" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

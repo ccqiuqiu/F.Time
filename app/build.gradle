@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.ccqiuqiu.ftime"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.2.1'
+        compile 'com.android.support:design:23.2.1'
+        compile 'com.android.support:recyclerview-v7:23.2.1'
+        compile 'com.android.support:cardview-v7:23.2.1'
+        compile 'com.android.support:gridlayout-v7:23.2.1'
+        //h6ah4i/android-advancedrecyclerview
+        compile('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.8.6@aar') {
+            transitive = true
+        }
+        compile 'com.github.rey5137:material:1.2.2'//rey5137/material
+        //wyouflf/xUtils3
+        compile 'org.xutils:xutils:3.3.22'
+        //rengwuxian/MaterialEditText
+        compile 'com.rengwuxian.materialedittext:library:2.1.4'
+        //oli107/material-range-bar
+        compile 'com.appyvet:materialrangebar:1.3'
+        //ApmeM/android-flowlayout
+        compile 'org.apmem.tools:layouts:1.10@aar'
+        //wdullaer/MaterialDateTimePicker
+        compile 'com.wdullaer:materialdatetimepicker:2.2.0'
+        //Karumi/Dexter
+        compile 'com.karumi:dexter:2.2.2'
+        //afollestad/material-dialogs
+        compile('com.github.afollestad.material-dialogs:core:0.8.5.7@aar') { transitive = true }
+    }
+}
+

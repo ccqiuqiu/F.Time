@@ -1,0 +1,161 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">F.Time</string>
+
+    <string name="navigation_drawer_open">打开抽屉</string>
+    <string name="navigation_drawer_close">关闭抽屉</string>
+    <string name="action_settings">设置</string>
+    <string name="close">关闭</string>
+    <string name="auth_con">姓名：ccxiong\n邮箱：95353088@qq.com</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="add_alarm">添加闹钟</string>
+    <string name="lingsheng">默认铃声</string>
+    <string name="zhendong">振动</string>
+    <string name="jianqiang">铃声渐强</string>
+    <string name="alarm_name">闹钟名称</string>
+    <string name="type_one">单次</string>
+    <string name="type_work">工作日</string>
+    <string name="type_week">星期</string>
+    <string name="type_month">每月</string>
+    <string name="type_year">纪念日</string>
+    <string name="type_year_cn">农历</string>
+    <string name="week_1">一</string>
+    <string name="week_2">二</string>
+    <string name="week_3">三</string>
+    <string name="week_4">四</string>
+    <string name="week_5">五</string>
+    <string name="week_6">六</string>
+    <string name="week_7">日</string>
+    <string name="week_21">周一</string>
+    <string name="week_22">周二</string>
+    <string name="week_23">周三</string>
+    <string name="week_24">周四</string>
+    <string name="week_25">周五</string>
+    <string name="week_26">周六</string>
+    <string name="week_27">周日</string>
+    <string name="select_date">选择日期</string>
+    <string name="type_zdy">自定义</string>
+    <string name="zdy_work">响铃天数</string>
+    <string name="zdy_unwork">暂停天数</string>
+    <string name="zdy_curdays">当前是第几天</string>
+    <string name="shengming_con">本应用部分图资源来自网络和其它App(如Favorie开发的AT)，如有不妥请告之，我将删除相关内容。</string>
+    <string name="progress_name">输入标题</string>
+    <string name="type_time">时间</string>
+    <string name="type_date">日期</string>
+    <string name="type_fenqi">分期付款</string>
+    <string name="time_qujian">设置 开始时间 和 结束时间</string>
+    <string name="date_qujian">设置 开始日期 和 结束日期</string>
+    <string name="shoudong">手动（每月需要确认才会继续）</string>
+    <string name="tx_0">不需要提醒</string>
+    <string name="tx_1">当天提醒</string>
+    <string name="tx_2">提前一天提醒</string>
+    <string name="tx_3">提前三天提醒</string>
+    <string name="tx_4">提前一周提醒</string>
+    <string name="time_0">1分钟</string>
+    <string name="time_1">5分钟</string>
+    <string name="time_2">10分钟</string>
+    <string name="time_3">15分钟</string>
+    <string name="time_4">20分钟</string>
+    <string name="time_5">25分钟</string>
+    <string name="time_6">30分钟</string>
+    <string name="about">关于</string>
+    <string name="degault_lingsheng">闹钟铃声</string>
+    <string name="zanting">暂停时长</string>
+    <string name="lingshengshichang">闹钟时长</string>
+    <string name="description_direction_left">向左滑动可暂停闹钟</string>
+    <string name="description_direction_right">向右滑动可关闭闹钟</string>
+    <plurals name="alarm_alert_snooze_duration">
+        <item msgid="9092917312369131464" quantity="one">"1分钟"</item>
+        <item msgid="6731274475422132958" quantity="other">"<xliff:g id="NUMBER">%d</xliff:g>分钟"</item>
+    </plurals>
+    <string name="alarm_alert_off_text" msgid="4472073417593915002">"闹钟已关闭"</string>
+    <string name="alarm_alert_snooze_text" msgid="1774416052207651584">"暂停"</string>
+    <plurals name="alarm_alert_snooze_set">
+        <item msgid="7884410398338611019" quantity="one">"暂停1分钟。"</item>
+        <item msgid="7377899473014259727" quantity="other">"暂停<xliff:g id="MINUTES">%d</xliff:g>分钟。"</item>
+    </plurals>
+    <string name="alarm_alert_snoozed_text">"已暂停"</string>
+    <string name="main_clock_12_hours_format" translatable="false">h:mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">HH:mm</string>
+    <string name="yanchi">延迟</string>
+    <string name="fenzhong">分钟</string>
+    <string name="tixing">提醒设置</string>
+    <string name="add_progress">添加进度条</string>
+    <string name="next_date">下次：</string>
+    <string name="xiangling">响铃</string>
+    <string name="zanting0">暂停</string>
+    <string name="err_zdy">自定义闹钟的响铃天数、暂停天数、当前是第几天都为必填项！</string>
+    <string name="add_alarm_success">添加闹钟成功。</string>
+    <string name="add_alarm_success_0">闹钟已经设置为</string>
+    <string name="add_alarm_success_1">后响起。</string>
+    <string name="alarm">闹钟</string>
+    <string name="hours">小时</string>
+    <string name="minutes">分钟</string>
+    <string name="second">秒</string>
+    <string name="day2">天</string>
+    <string name="type_year_2">每年</string>
+    <string name="commit">确定</string>
+    <string name="err_zdy_2">当前天数必须是 {0} 和 {1} 之间的数字</string>
+    <string name="del_qr">闹钟删除成功！</string>
+    <string name="reset">撤销</string>
+    <string name="edit_alarm">编辑闹钟</string>
+    <string name="edit_alarm_success">修改成功！</string>
+    <string name="select_time">设置时间</string>
+    <string name="select_date_end">设置结束日期</string>
+    <string name="select_date_start">设置开始日期</string>
+    <string name="select_time_end">设置结束时间</string>
+    <string name="select_time_start">设置开始时间</string>
+    <string name="to">&#8202;至&#8202;</string>
+    <string name="err_time_null">开始时间和结束时间都不能为空！</string>
+    <string name="err_date_null">开始日期和结束日期都不能为空！</string>
+    <string name="add_progress_success">添加进度条成功。</string>
+    <string name="end_progress">将于 {0} 结束</string>
+    <string name="end_progress_0">将于 {0} 开始</string>
+    <string name="end_progress_1">已于 {0} 结束</string>
+    <string name="progress">进度条</string>
+    <string name="un_start">未开始</string>
+    <string name="is_end">已结束</string>
+    <string name="tip_unit_time">过去 {0} 分钟/剩余 {1} 分钟</string>
+    <string name="tip_unit_date">过去 {0} 天/剩余 {1} 天</string>
+    <string name="tip_unit_fenqi">完成 {0} 期/剩余 {1} 期</string>
+    <string name="edit_progress">编辑进度条</string>
+    <string name="edit_progress_success">修改进度条成功。</string>
+    <string name="err_endtinme">结束时间必须在开始时间之后\n请重新设置开始时间和结束时间。</string>
+    <string name="err_endtdate">结束日期必须在开始日期之后\n请重新设置开始日期和结束日期。</string>
+    <string name="set_time_next">请继续设置结束时间。</string>
+    <string name="set_date_next">请继续设置结束日期。</string>
+    <string name="set_qishu">设置总期数</string>
+    <string name="qishu">总期数</string>
+    <string name="err_qishu_null">期数必须为大于0的整数！</string>
+    <string name="progress_shengyu_tianshu">还有 {0} 天到期</string>
+    <string name="progress_next">（下期：{0}）</string>
+    <string name="progress_yihuan">完成下期</string>
+    <string name="alarm_skip">忽略一次</string>
+    <string name="cancel">取消</string>
+    <string name="skip_progress">提前完成</string>
+    <string name="skip_progress_con">确定要提前完成下期吗？\n一旦确定，进度将自动跳过一期。</string>
+    <string name="skip_alarm">忽略一次</string>
+    <string name="skip_alarm_con">确定要忽略本次闹钟吗？\n一旦确定，闹钟将跳过一次响铃。</string>
+    <string name="about_shuoming">F.Time是一款闹钟类App，鉴于闹钟的特殊性，程序将申请开机自启和时间改变相关的权限来支持软件的正常运行，
+    请不要禁用以上权限，并且将F.Time加入各种管家类软件的白名单，否则将导致闹钟在规定的时间不会响铃。</string>
+    <string name="help">使用说明</string>
+    <string name="version">版本</string>
+    <string name="version_con">软件版本：V{0}\n节假日数据版本：{1}</string>
+    <string name="mianze">免责申明</string>
+    <string name="auth">作者</string>
+    <string name="ganxie">感谢以下开源项目</string>
+    <string name="ganxie_con">h6ah4i/android-advancedrecyclerview
+        \nvajro/MaterialDesignLibrary
+        \nrey5137/material
+        \nwyouflf/xUtils3
+        \nrengwuxian/MaterialEditText
+        \nApmeM/android-flowlayout
+        \nwdullaer/MaterialDateTimePicker</string>
+    <string name="permission">申请权限</string>
+    <string name="permission_con">F.Time需要申请一些必要的权限来保证软件的正常运行\n请在接下来的提示框中选择允许。</string>
+    <string name="permission_denied">你拒绝了权限申请，一些功能将不能正常使用。</string>
+    <string name="del_progress_qr">删除进度条成功。</string>
+    <string name="progress_di">第 {0} 期</string>
+    <string name="miss">已错过</string>
+</resources>

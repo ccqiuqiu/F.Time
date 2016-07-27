@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.design.widget.AppBarLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+<!--<View--><!--android:id="@+id/top_view"--><!--android:layout_width="match_parent"--><!--android:layout_height="20dp"/>-->
+
+<!--<android.support.v7.widget.Toolbar--><!--android:id="@+id/toolbar"--><!--android:layout_width="match_parent"--><!--android:layout_height="?attr/actionBarSize"--><!--android:background="?attr/colorPrimary"--><!--app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>--><!--</android.support.design.widget.AppBarLayout>-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="12:12"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/time"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/time"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="2016-06-06" />
+
+            <Switch
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_alarm_type" />
+
+        <include layout="@layout/layout_alarm_type_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lingsheng" />
+
+            <TextView
+                android:id="@+id/lingsheng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="@string/lingsheng"
+                android:textColor="@color/white_t" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_yinliang" />
+
+            <com.ccqiuqiu.ftime.View.MyRangeBar
+                android:id="@+id/yinliangRang"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                custom:connectingLineColor="@color/colorAccent"
+                custom:pinColor="@color/white"
+                custom:pinMaxFont="12sp"
+                custom:pinRadius="14dp"
+                custom:rangeBar="false"
+                custom:selectorColor="@color/colorAccent"
+                custom:temporaryPins="true"
+                custom:textColor="@color/colorAccent"
+                custom:tickEnd="100"
+                custom:tickInterval="1"
+                custom:tickStart="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--<com.gc.materialdesign.views.CheckBox-->
+                <!--android:id="@+id/cb_zhendong"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--materialdesign:check="true" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_zhendong"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/zhendong" />-->
+            <CheckBox
+                android:id="@+id/cb_zhendong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhendong"
+                android:textColor="@color/text"
+                style="@style/CheckBox"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/cb_jianqiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/jianqiang"
+                android:textColor="@color/text"
+                style="@style/CheckBox"
+                android:checked="true"/>
+
+            <!--<com.gc.materialdesign.views.CheckBox-->
+                <!--android:id="@+id/cb_jianqiang"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--materialdesign:check="true" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_jianqiang"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/jianqiang" />-->
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/alarm_name"
+            android:maxLength="16"
+            android:textSize="14sp"
+            app:met_baseColor="#FFFFFFFF"
+            app:met_clearButton="true"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="true"
+            app:met_primaryColor="#FFFFFFFF" />
+    </LinearLayout>
+</ScrollView>
