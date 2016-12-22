@@ -60,7 +60,7 @@ public class AboutActivity extends AppCompatActivity {
         mToolbar.setBackgroundColor(App.mColorPrimary);
 
         mVersion.setText(MessageFormat.format(getString(R.string.version_con),
-                ViewUtils.getVersionName(),"20161231"));
+                ViewUtils.getVersionName(),App.mHolidayVer+""));
     }
 
     @Override
