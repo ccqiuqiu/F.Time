@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 
 import com.ccqiuqiu.ftime.App;
 import com.ccqiuqiu.ftime.BroadcastReceiver.AlarmStopBroadcastReceiver;
@@ -233,7 +234,7 @@ public class AlarmUtils {
                 .setAutoCancel(false)
                 .setPriority(Notification.PRIORITY_MAX)
                 .setCategory(Notification.CATEGORY_ALARM)
-                //.setLargeIcon(BitmapFactory.decodeResource(getContext().getResources(), R.drawable.ic_alarm))
+                .setLargeIcon(BitmapFactory.decodeResource(App.mContext.getResources(), R.drawable.ic_alarm))
                 .setSmallIcon(R.drawable.ic_alarm);//设置通知小ICON
 
         //设置悬挂式通知，保证通知窗口不会自动消失

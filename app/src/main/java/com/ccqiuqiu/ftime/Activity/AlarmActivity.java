@@ -12,6 +12,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Build;
@@ -188,6 +189,7 @@ public class AlarmActivity extends AppCompatActivity implements View.OnTouchList
                 .setOngoing(false)
                 .setAutoCancel(true)
                 .setPriority(Notification.PRIORITY_DEFAULT)
+                .setLargeIcon(BitmapFactory.decodeResource(App.mContext.getResources(), R.drawable.ic_alarm))
                 .setSmallIcon(R.drawable.ic_alarm);
         notificationManager.notify(id, mBuilder.build());
 
@@ -386,7 +388,6 @@ public class AlarmActivity extends AppCompatActivity implements View.OnTouchList
         return bounceAnimator;
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private Animator getAlertAnimator(final View source, final int titleResId,
                                       final String infoText, final String accessibilityText, final int revealColor,
                                       final int backgroundColor) {
@@ -455,7 +456,7 @@ public class AlarmActivity extends AppCompatActivity implements View.OnTouchList
         alertAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animator) {
-                revealView.postDelayed(new Runnable() {
+                handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         stop();
