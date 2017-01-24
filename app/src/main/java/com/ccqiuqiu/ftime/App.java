@@ -56,7 +56,7 @@ public class App extends Application {
     private static ProgressService mProgressService;
     public static int mSysMusicVol;
     public static int mSysAlarmVol;
-    private int mHolidayVer = 20161231;
+    public static int mHolidayVer = 2017100801;
 
     @Override
     public void onCreate() {
@@ -129,7 +129,7 @@ public class App extends Application {
             holidayService.db.getDatabase().beginTransaction();
             try {
                 //删除所有数据
-                holidayService.db.execNonQuery("delete holiday");
+                holidayService.db.execNonQuery("drop table holiday");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -138,75 +138,69 @@ public class App extends Application {
                     "year text not null, month long not null,date text not null,status text not null)";
             holidayService.db.execNonQuery(sql.toString());
 
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 1, 1, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 12, 31, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 1, 2, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 1, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 1, 3, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 2, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 6, 1)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 22, 1)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 7, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 27, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 8, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 28, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 9, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 29, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 10, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 30, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 11, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 1, 31, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 12, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 2, 1, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 13, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 2, 2, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 2, 14, 1)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 2, 4, 1)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 4, 2, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 1, 1)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 4, 3, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 2, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 4, 4, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 3, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 4, 30, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 4, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 5, 1, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 29, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 5, 2, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 4, 30, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 6, 9, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 5, 1, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 6, 10, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 5, 27, 1)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 6, 11, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 5, 28, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 6, 12, 1)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 5, 29, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 9, 15, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 5, 30, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 9, 16, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 9, 30, 1)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 9, 17, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 1, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 9, 18, 1)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 2, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 1, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 3, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 2, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 4, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 3, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 5, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 4, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 6, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 5, 0)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 7, 0)";
             holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 6, 0)";
-            holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 7, 0)";
-            holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 8, 1)";
-            holidayService.db.execNonQuery(sql.toString());
-            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2016, 10, 9, 1)";
+            sql = "INSERT INTO holiday (year, month, date, status) VALUES (2017, 10, 8, 0)";
             holidayService.db.execNonQuery(sql.toString());
 
             holidayService.db.getDatabase().setTransactionSuccessful();
