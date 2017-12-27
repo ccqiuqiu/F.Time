@@ -40,8 +40,9 @@ public class WelActivity extends AppCompatActivity {
             @Override
             public void run() {
                 finish();
+                overridePendingTransition(0, 0);
             }
-        }, 1000);
+        }, 100);
     }
 
     @Override

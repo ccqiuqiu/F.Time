@@ -137,7 +137,17 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         musicIntent.putExtra("zhendong", zhendong);
         context.startService(musicIntent);
 
-        //获取电源管理器对象
+        // 由于用Notification在miu上有bug，暂时找不到解决办法，所以不分是否亮屏，统一显示闹钟的页面
+        Intent intentAlarm = new Intent(context, AlarmActivity.class);
+        intentAlarm.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intentAlarm.putExtra("id", id);
+        intentAlarm.putExtra("flg", flg);
+        intentAlarm.putExtra("title", title);
+        intentAlarm.putExtra("content", content);
+        intentAlarm.putExtra("alarm_time", alarm_time);
+        context.startActivity(intentAlarm);
+
+/*        //获取电源管理器对象
         PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         //判断屏幕是否点亮
         boolean isScreenOn = pm.isInteractive();
@@ -176,6 +186,6 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
             missIntent.putExtra("title", title);
             missIntent.putExtra("content", content);
             context.startService(missIntent);
-        }
+        }*/
     }
 }

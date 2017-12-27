@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.support.v4.app.NotificationCompat;
 
 import com.ccqiuqiu.ftime.App;
 import com.ccqiuqiu.ftime.BroadcastReceiver.AlarmStopBroadcastReceiver;
@@ -226,7 +227,7 @@ public class AlarmUtils {
         NotificationManager notificationManager = (NotificationManager)
                 context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-        Notification.Builder mBuilder = new Notification.Builder(context);
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context);
         mBuilder.setContentTitle(title)
                 .setContentText(content)
                 .setWhen(System.currentTimeMillis())
